@@ -1,0 +1,37 @@
+/* CND Styles */
+/*.cnd-header h3 { font-family: "myriad-pro-condensed-1", "myriad-pro-condensed-2", sans-serif; font-size: 21px; color: #323232; text-transform: uppercase; margin: 0px !important; }*/
+.cnd-sidebar { width: 150px; float: left; padding: 20px 20px 0px 20px;  background: #eaeaea;
+border: 1px solid #d9d9d9;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-o-border-radius: 4px;
+border-radius: 4px; }
+.cnd-header { border-bottom: 1px dotted #CCC; margin-bottom: 30px; padding-bottom: 30px; }
+.cnd-header:last-child { border: none; margin-bottom: 0; }
+
+ul.cnd-list { overflow-y: auto !important; overflow-x: hidden; margin: 0; width: 190px !important; }
+ul.cnd-list li /*, div.handle*/ { cursor: pointer; width: 170px; padding: 2px 0 2px 20px; }
+ul.cnd-list li:hover, ul.cnd-list li .handle:hover { background: #dcdcdc; }
+ul.cnd-list li.ui-state-disabled, div.handle.ui-state-disabled { color: #a6a6a6; cursor: default; }
+/*ul.cnd-list .ui-state-active, ul.cnd-list .ui-state-active:hover { background: #a6a6a6 url(images/filter-cancel.png) no-repeat 170px center; color: #fff; ma//////rgin-left: -20px;  }*/
+/*ul.cnd-list .handle.ui-state-active, ul.cnd-list .handle.ui-state-active:hover { background: #a6a6a6 url(images/filter-cancel.png) no-repeat 150px center; color: #fff; }*/
+ul.cnd-list li.location { padding: 0px; width: 100%; }
+ul.cnd-list li.location .handle { padding: 2px 0 2px 20px; }
+ul.cnd-list li.location .handle.ui-state-active {  background: #a6a6a6 url(images/filter-cancel.png) no-repeat 170px center; }
+ul.cnd-list li .tier-2 { text-indent: 10px; list-style: none; }
+/*.cnd-header .cancel { background: blue url(images/cancel-all.png) no-repeat; display: block; height: 9px; width: 9px; float: right; margin: 7px 7px 0 0; }*/
+ul.cnd-list li.location.tier-1.ui-has-child.ui-state-active { background: none; color: #666; }
+
+ul.cnd-list li.topic { padding: 0px; }
+
+.waiting-for-results { padding: 80px 0; text-align: center; }
+
+.cnd-pagination { display: none; text-align: right; }
+.cnd-pagination span.results { padding: 0 10px; }
+.cnd-pagination button { background: #d9d9d9; border: none; color: #FFF; }
+.cnd-pagination span.arrows button { cursor: pointer; text-indent: -9999px; width: 20px; height: 20px; }
+/*.cnd-pagination span.arrows button.next { background: url(images/button-next.png) no-repeat top; }*/
+/*.cnd-pagination span.arrows button.previous { background: url(images/button-prev.png) no-repeat top; }*/
+.cnd-pagination span.arrows button:hover { background-position: bottom; }
+
+#cnd-navigation .cnd-button { display: none !important; } /* Hide the cancel button */
