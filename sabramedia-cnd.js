@@ -729,7 +729,7 @@ String.prototype.rtrim = function() { return this.replace(/\s+$/,""); };
 						// Click on
 						if(!$thisObject.is('.ui-state-active')){
 							if(groupSettings.dataFormatSingle){
-								$.voCnd.filterArray[groupName] = [$thisObject.attr('rel')];
+								$.voCnd.filterArray[groupName] = [encodeURI($thisObject.attr('rel'))];
 								$(domObject).find('.cnd-button.cancel').show();
 							}else{
 							// Format interface so group data is sent as an array
@@ -772,7 +772,7 @@ String.prototype.rtrim = function() { return this.replace(/\s+$/,""); };
 							$(domObject).find('.cnd-button.cancel').show();
 
 							// Remove the clicked item id
-							var clickedItem = $thisObject.attr('rel');
+							var clickedItem = encodeURI($thisObject.attr('rel'));
 
 							/*if(groupSettings.dataFormatSingle){
 								$.voCnd.filterArray[groupName] = 0;

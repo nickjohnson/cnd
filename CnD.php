@@ -588,6 +588,10 @@
 					case "postmeta":
 						// Automatically set postmeta fields for the result array here
 						//array("type"=>"postmeta","name"=>"ministry_type"),
+						foreach( $this->filter_input[$filter["name"]] as &$name ){
+							$name = urldecode($name);
+						}
+
 						$this->setPostMetaExcludeQueries( $filter["name"] );
 						// REMOVED the following convenience in favor with keeping field creation consistent in the controller.
 						//array_push($this->fields, array("type"=>"postmeta","field_name"=>$filter["name"]));
